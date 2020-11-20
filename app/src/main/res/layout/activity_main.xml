@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:id = "@+id/location_search"
+            android:layout_alignParentStart="true"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:hint="Enter a Zip Code."></EditText>
+        
+        <ImageView
+            android:id = "@+id/button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="17dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:onClick="onClick"
+            android:src="@mipmap/search"></ImageView>
+
+    </RelativeLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="45dp"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:layout_alignParentTop="true"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+</RelativeLayout>
+
+
+
